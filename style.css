@@ -1,13 +1,12 @@
 body {
 	overflow: auto;
-	background: url(./background.jpg) no-repeat center center fixed;
+	background: url(./background.jpg) no-repeat center fixed;
  	background-size: cover;
-
 }
 
 @font-face {
-  font-family: krusty_crab;
-  src: url(KrabbyPatty-PKZAB.ttf);
+  	font-family: krusty_crab;
+  	src: url(KrabbyPatty-PKZAB.ttf);
 }
 
 .header {
@@ -46,13 +45,14 @@ body {
 	border-image: url(./fence.jpg) 10 round;
   	width:80%;
  	min-height: 300px;
-  	background: #51a9fcbb;
+  	background: #51a9fcb6;
 	justify-content: center;
 } 
  
-.slideshow img {
+.image {
 	max-width: 200px;
   	max-height: 200px;
+	border-radius: 15px;	  
 }
 
 .season-header {
@@ -99,4 +99,23 @@ footer {
   	width: 200px;
   	height: 200px;
   	margin: 120px;
-}	
+}
+
+.hidden {
+	display: none;
+	width: 90%;
+	height: 90%;
+}
+
+.gal_but {
+	font-family: 'krusty_crab';
+	-webkit-text-stroke: 1px #000000;
+	color: #03e4ec;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.image_hid {
+  	max-height: 200px;
+	margin: 10px;
+}
