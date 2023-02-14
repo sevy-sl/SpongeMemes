@@ -49,6 +49,11 @@ body {
 	justify-content: center;
 } 
  
+.image_holder{
+	width: 200px;
+	height: 200px;
+}
+
 .image {
 	max-width: 200px;
   	max-height: 200px;
@@ -90,6 +95,10 @@ footer {
   	display: inline;
 }
 
+.slideshow {
+	display: inline-flex;
+}
+
 .seasons {
   	padding: 30px;
 }
@@ -119,3 +128,22 @@ footer {
   	max-height: 200px;
 	margin: 10px;
 }
+
+button{
+	width: 70px;
+	height: 70px;
+	border: none;
+	
+
+}
+
+.slick-prv {
+	background: url('left.png')no-repeat!important ;
+    background-size: contain!important;
+}
+  
+.slick-nxt {
+	background: url('right.png')no-repeat!important ;
+    background-size: contain!important;
+}
+
