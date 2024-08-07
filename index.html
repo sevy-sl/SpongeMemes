@@ -30,7 +30,7 @@
 		        </div>
 		        <div class='box'>
 		          	<div class='info'>
-		            	Hello! This site was made for people, who likes the first three brilliant seasons of the show:'Spongebob SquarePants'. I wanted to thank animators for their work, because they really made the big part of the show. Thank you :-)
+		            	Hello! This page was made for you to easily find and download SpongeBob SquarePants' smear frames, also some pictures I consider to be meme-worthy. I love this show, especially its earlier art style. These less saturated kinda blurry images are so satisfying to see. So here they are :-)
 		          	</div>
 		          	<div class='seasons'>
 		            
@@ -38,33 +38,27 @@
 							<h3 class='season-header'>Season 1</h3>
 							<div class='slideshow' id='slideshow1'>
 								<button type = "button" class = "slick-prv" id="slick-prev1"></button>
-								<div class="image_holder"><img src='./Season1/1.png' class='image' id ='image1'  onclick="window.open(this.src)"></div>
+								<div class="image_holder"><img loading='lazy' src='./Season1/1.png' class='image' id ='image1'></div>
 								<button type = "button" class = "slick-nxt" id="slick-next1"></button>
 							</div>
-							<a data-fancybox class="gal_but" href='#hidden1'>Open full gallery</a>
-							<div class="hidden" id="hidden1">Currently not working</div>
 						</div>
 
 						<div class='season'>
 							<h3 class='season-header'>Season 2</h3>
 							<div class='slideshow' id='slideshow2'>
 								<button type = "button" class = "slick-prv" id="slick-prev2"></button>
-								<div class="image_holder"><img src='./Season2/1.png' class='image' id ='image2'  onclick="window.open(this.src)"></div>
+								<div class="image_holder"><img loading='lazy' src='./Season2/1.png' class='image' id ='image2'></div>
 								<button type = "button" class = "slick-nxt" id="slick-next2"></button>
 							</div>
-							<a data-fancybox class="gal_but" href='#hidden2'>Open full gallery</a>
-							<div class="hidden" id="hidden2">Currently not working</div>
 						</div>
 
 						<div class='season'>
 							<h3 class='season-header'>Season 3</h3>
 							<div class='slideshow' id='slideshow3'>
 								<button type = "button" class = "slick-prv" id="slick-prev3"></button>
-								<div class="image_holder"><img src='./Season3/1.png' class='image' id ='image3'  onclick="window.open(this.src)"></div>
+								<div class="image_holder"><img loading='lazy' src='./Season3/1.webp' class='image' id ='image3'></div>
 								<button type = "button" class = "slick-nxt" id="slick-next3"></button>
 							</div>
-							<a data-fancybox class="gal_but" href='#hidden3'>Open full gallery</a>
-							<div class="hidden" id="hidden3">Currently not working</div>
 						</div>
 		          	</div>
 	        	</div>
@@ -111,7 +105,7 @@
 				} else{					
 					c -= 1;
 				}
-				$(`#image3`).attr("src",`./Season3/${c}.png`);
+				$(`#image3`).attr("src",`./Season3/${c}.webp`);
 			});
 			$(`#slick-next3`).click(function(){
 				if(c == k){
@@ -119,12 +113,16 @@
 				} else{					
 					c += 1;
 				}
-				$(`#image3`).attr("src",`./Season3/${c}.png`);
+				$(`#image3`).attr("src",`./Season3/${c}.webp`);
 			});
+			
 
+			$('#image3').click(function(){
+				window.open(this.src.slice(0, -4) + 'png');
+			});
 		</script>
 		</main>
 		
-		<footer><h7>&copy; Copyright <script>document.write(new Date().getFullYear())</script>. Everything belongs to Nickelodeon, SpongeBob Squarepants. I don't own anything :/</h7></footer>
+		<footer><h7>Everything belongs to Nickelodeon. I don't own anything.</h7></footer>
 	</body>
 </html>
